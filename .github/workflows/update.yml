@@ -33,7 +33,10 @@ jobs:
       - name: Commit changes
         uses: EndBug/add-and-commit@v9
         with:
-          add: "blocked-addresses.ts"
+          add: |
+            "blocked-addresses.ts"
+            "package.json"
+            "pnpm-lock.yaml"
           message: "Update Stored Addresses"
           default_author: github_actions
           committer_name: GitHub Actions
