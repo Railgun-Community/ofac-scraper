@@ -19,9 +19,13 @@ jobs:
           cache: "yarn"
       - name: Install dependencies
         run: yarn
+      - name: Install Foundry
+        uses: foundry-rs/foundry-toolchain@v1
       - name: Compile
         run: yarn build
       - name: Run script
+        env:
+          INFURA_API_KEY: ${{ secrets.INFURA_API_KEY }}
         run: yarn start
       - name: Commit changes
         uses: EndBug/add-and-commit@v9
