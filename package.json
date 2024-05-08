@@ -1,0 +1,20 @@
+{
+  "name": "ofac-scraper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@railgun-community/shared-models": "6.4.6",
+    "@viem/anvil": "^0.0.10",
+    "dotenv": "^16.4.5",
+    "ethers": "^6.12.1",
+    "viem": "^2.10.2"
+  }
+}
