@@ -6,7 +6,7 @@ settings:
 
 dependencies:
   '@railgun-community/shared-models':
-    specifier: 6.4.6
+    specifier: ^6.4.6
     version: 6.4.6(ethers@6.12.1)
   '@viem/anvil':
     specifier: ^0.0.10
