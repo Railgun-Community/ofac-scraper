@@ -10,23 +10,38 @@ const main = async () => {
   const anvil = await startAnvil();
   setTimeout(async () => {
     const logs = await getFilteredLogs();
-    const outputList = OFAC_SANCTIONS_LIST_ADDRESSES;
-    const list: string[] = [];
+    const wholeFoundList: string[] = [];
+    const needToAdd: string[] = [];
     for (const log of logs) {
       // @ts-expect-error
       const { addrs } = log.args;
       for (const addr of addrs) {
-        if (
-          !list.includes(addr) &&
-          !OFAC_SANCTIONS_LIST_ADDRESSES.includes(addr.toLowerCase())
-        ) {
-          list.push(addr);
-          outputList.push(addr);
+        if (!needToAdd.includes(addr)) {
+          if (!OFAC_SANCTIONS_LIST_ADDRESSES.includes(addr.toLowerCase())) {
+            needToAdd.push(addr);
+          }
+        }
+        if (!wholeFoundList.includes(addr)) {
+          wholeFoundList.push(addr);
         }
       }
     }
-    // write to file
-    const listBlock = JSON.stringify(outputList, null, 2);
+    console.log("Total Found", wholeFoundList.length);
+    console.log("Current List Length", OFAC_SANCTIONS_LIST_ADDRESSES.length);
+    const finalList = [];
+    for (let i = 0; i < OFAC_SANCTIONS_LIST_ADDRESSES.length; i++) {
+      const addr = OFAC_SANCTIONS_LIST_ADDRESSES[i];
+      const replacementValue = wholeFoundList.find(
+        (a) => a.toLowerCase() === addr
+      );
+      if (replacementValue != null) {
+        finalList[i] = replacementValue;
+      }
+    }
+    finalList.push(...needToAdd);
+    console.log("New Addresses Found", needToAdd.length);
+
+    const listBlock = JSON.stringify(finalList, null, 2);
     const outputFile = `export const OFAC_SANCTIONS_LIST_ADDRESSES = ${listBlock}.map(address => address.toLowerCase());`;
 
     fs.writeFileSync("blocked-addresses.ts", outputFile);

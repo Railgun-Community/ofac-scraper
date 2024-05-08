@@ -20,8 +20,8 @@ jobs:
           cache: "yarn"
       - name: Install dependencies
         run: pnpm i
-      - name: Update dependencies
-        run: pnpm up
+      - name: Upgrade dependencies
+        run: pnpm upgrade
       - name: Install Foundry
         uses: foundry-rs/foundry-toolchain@v1
       - name: Compile
