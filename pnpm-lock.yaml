@@ -21,8 +21,8 @@ importers:
         specifier: ^6.12.1
         version: 6.12.1
       viem:
-        specifier: ^2.12.1
-        version: 2.12.1
+        specifier: ^2.12.4
+        version: 2.12.4
 
 packages:
 
@@ -173,8 +173,8 @@ packages:
   tslib@2.4.0:
     resolution: {integrity: sha512-d6xOpEDfsi2CZVlPQzGeux8XMwLT9hssAsaPYExaQMuYskwb+x1x7J371tWlbBdWHroy99KnVB6qIkUbs5X3UQ==}
 
-  viem@2.12.1:
-    resolution: {integrity: sha512-71gxcGCXdNXQuBhpqXblVRH1F3hP/wONCptVOCW4r6VrCEXL/9vfNyCdQKtK/0WGyXm04Zs9Jf/AOAxKqf6FmQ==}
+  viem@2.12.4:
+    resolution: {integrity: sha512-GUKztqyX7UW0rCrQurcIcuL3MV2PvM9AKvy0cV9lesPKYlbTPZibx4FbWQxjN5LuH+oZhl2YBF/2mU9vmpNw6g==}
     peerDependencies:
       typescript: '>=5.0.4'
     peerDependenciesMeta:
@@ -357,7 +357,7 @@ snapshots:
 
   tslib@2.4.0: {}
 
-  viem@2.12.1:
+  viem@2.12.4:
     dependencies:
       '@adraffy/ens-normalize': 1.10.0
       '@noble/curves': 1.2.0
