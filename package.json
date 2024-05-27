@@ -11,10 +11,10 @@
   "author": "@railgun-community",
   "license": "ISC",
   "dependencies": {
-    "@railgun-community/shared-models": "^6.4.7",
-    "@viem/anvil": "^0.0.10",
-    "dotenv": "^16.4.5",
-    "ethers": "^6.12.1",
-    "viem": "^2.12.4"
+    "@railgun-community/shared-models": "^7.0.7",
+    "@viem/anvil": "0.0.10",
+    "dotenv": "16.4.5",
+    "ethers": "6.12.1",
+    "viem": "2.12.4"
   }
 }
