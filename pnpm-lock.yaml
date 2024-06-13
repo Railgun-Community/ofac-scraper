@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@railgun-community/shared-models':
-        specifier: ^7.1.0
-        version: 7.1.0(ethers@6.12.1)
+        specifier: ^7.3.0
+        version: 7.3.0(ethers@6.12.1)
       '@viem/anvil':
         specifier: 0.0.10
         version: 0.0.10
@@ -39,13 +39,13 @@ packages:
     resolution: {integrity: sha512-MVC8EAQp7MvEcm30KWENFjgR+Mkmf+D189XJTkFIlwohU5hcBbn1ZkKq7KVTi2Hme3PMGF390DaL52beVrIihQ==}
     engines: {node: '>= 16'}
 
-  '@railgun-community/shared-models@7.1.0':
-    resolution: {integrity: sha512-Lomd2l9950CLhyUyhGDJVdEUkgiJn5rQ2l+i4OxE4b5+vsOBhjB2jgiJ+rNJFRHbNkReSbng694gIt+dfjnuQA==}
+  '@railgun-community/shared-models@7.3.0':
+    resolution: {integrity: sha512-+PyQnOkRJcMpDc50Ru6ddjuew/q46EOYE8iQCD5Id+3LGafhJNPeHD2lahZpj2s+CfN/XX6o5DAL5SO3/Y/A0g==}
     peerDependencies:
       ethers: github:Railgun-Community/ethers.js#v6.7.10
 
-  '@scure/base@1.1.6':
-    resolution: {integrity: sha512-ok9AWwhcgYuGG3Zfhyqg+zwl+Wn5uE+dwC0NV/2qQkx4dABbb/bx96vWu8NSj+BNjjSjno+JRYRjle1jV08k3g==}
+  '@scure/base@1.1.7':
+    resolution: {integrity: sha512-PPNYBslrLNNUQ/Yad37MHYsNQtK67EhWb6WtSvNLLPo7SdVZgkUjD6Dg+5On7zNwmskf8OX7I7Nx5oN+MIWE0g==}
 
   '@scure/bip32@1.3.2':
     resolution: {integrity: sha512-N1ZhksgwD3OBlwTv3R6KFEcPojl/W4ElJOeCZdi+vuI5QmTFwLq3OFf2zd2ROpKvxFdgZ6hUpb0dx9bVNEwYCA==}
@@ -234,22 +234,22 @@ snapshots:
 
   '@noble/hashes@1.3.2': {}
 
-  '@railgun-community/shared-models@7.1.0(ethers@6.12.1)':
+  '@railgun-community/shared-models@7.3.0(ethers@6.12.1)':
     dependencies:
       ethers: 6.12.1
 
-  '@scure/base@1.1.6': {}
+  '@scure/base@1.1.7': {}
 
   '@scure/bip32@1.3.2':
     dependencies:
       '@noble/curves': 1.2.0
       '@noble/hashes': 1.3.2
-      '@scure/base': 1.1.6
+      '@scure/base': 1.1.7
 
   '@scure/bip39@1.2.1':
     dependencies:
       '@noble/hashes': 1.3.2
-      '@scure/base': 1.1.6
+      '@scure/base': 1.1.7
 
   '@types/node@18.15.13': {}
 
