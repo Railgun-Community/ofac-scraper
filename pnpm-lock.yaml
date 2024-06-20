@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@railgun-community/shared-models':
-        specifier: ^7.3.0
-        version: 7.3.0(ethers@6.12.1)
+        specifier: ^7.3.1
+        version: 7.3.1(ethers@6.12.1)
       '@viem/anvil':
         specifier: 0.0.10
         version: 0.0.10
@@ -39,8 +39,8 @@ packages:
     resolution: {integrity: sha512-MVC8EAQp7MvEcm30KWENFjgR+Mkmf+D189XJTkFIlwohU5hcBbn1ZkKq7KVTi2Hme3PMGF390DaL52beVrIihQ==}
     engines: {node: '>= 16'}
 
-  '@railgun-community/shared-models@7.3.0':
-    resolution: {integrity: sha512-+PyQnOkRJcMpDc50Ru6ddjuew/q46EOYE8iQCD5Id+3LGafhJNPeHD2lahZpj2s+CfN/XX6o5DAL5SO3/Y/A0g==}
+  '@railgun-community/shared-models@7.3.1':
+    resolution: {integrity: sha512-tm3Q5eyC3Aff49YQ67zNn4dC72/jBuZPKt8usOFz60OmhHi7rQEktaTKARR+h+RWFbzTSxt+G1Gch/Bt3JVN3A==}
     peerDependencies:
       ethers: github:Railgun-Community/ethers.js#v6.7.10
 
@@ -234,7 +234,7 @@ snapshots:
 
   '@noble/hashes@1.3.2': {}
 
-  '@railgun-community/shared-models@7.3.0(ethers@6.12.1)':
+  '@railgun-community/shared-models@7.3.1(ethers@6.12.1)':
     dependencies:
       ethers: 6.12.1
 
