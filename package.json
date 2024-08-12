@@ -11,7 +11,7 @@
   "author": "@railgun-community",
   "license": "ISC",
   "dependencies": {
-    "@railgun-community/shared-models": "^7.4.2",
+    "@railgun-community/shared-models": "^7.4.3",
     "@viem/anvil": "0.0.10",
     "dotenv": "16.4.5",
     "ethers": "6.12.1",
