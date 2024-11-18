@@ -73,8 +73,8 @@ packages:
   aes-js@4.0.0-beta.5:
     resolution: {integrity: sha512-G965FqalsNyrPqgEGON7nIx1e/OVENSgiEIzyC63haUMuvNnwIgIjMs52hlTCKhkBny7A2ORNlfY9Zu+jmGk1Q==}
 
-  cross-spawn@7.0.5:
-    resolution: {integrity: sha512-ZVJrKKYunU38/76t0RMOulHOnUcbU9GbpWKAOZ0mhjr7CX6FVrH+4FrAapSOekrgFQ3f/8gwMEuIft0aKq6Hug==}
+  cross-spawn@7.0.6:
+    resolution: {integrity: sha512-uV2QOWP2nWzsy2aMp8aRibhi9dlzF5Hgh5SHaB9OiTGEyDTiJJyx0uy51QXdyWbtAHNua4XJzUKca3OzKUd3vA==}
     engines: {node: '>= 8'}
 
   dotenv@16.4.5:
@@ -268,7 +268,7 @@ snapshots:
 
   aes-js@4.0.0-beta.5: {}
 
-  cross-spawn@7.0.5:
+  cross-spawn@7.0.6:
     dependencies:
       path-key: 3.1.1
       shebang-command: 2.0.0
@@ -293,7 +293,7 @@ snapshots:
 
   execa@7.2.0:
     dependencies:
-      cross-spawn: 7.0.5
+      cross-spawn: 7.0.6
       get-stream: 6.0.1
       human-signals: 4.3.1
       is-stream: 3.0.0
